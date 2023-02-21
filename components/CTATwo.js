@@ -11,7 +11,7 @@ const CTATwo = () => {
               <BlockTitle
                 textAlign="center"
                 paraText=""
-                titleText={`What Makes Us Ahead : Proven Technology`}
+                titleText={`What Makes Us Ahead: \n Proven Technology`}
               />
               <div className="row">
                 <div className="col-lg-6 text-center">

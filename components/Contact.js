@@ -1,12 +1,9 @@
 import React from "react";
 import BlockTitle from "./BlockTitle";
-import ContactBgShape from "../assets/images/shapes/contact-bg-shape-1-1.png";
-import ContactImage from "../assets/images/headline/eveon-4.png";
 
 const Contact = () => {
   return (
     <section className="contact-one">
-      <img src={ContactBgShape} className="contact-one__bg-shape-1" alt="" />
       <div className="container">
         <div className="row">
           <div className="col-lg-7">
@@ -43,16 +40,6 @@ const Contact = () => {
               </div>
             </form>
             <div className="result"></div>
-          </div>
-          <div
-            className="col-lg-5 d-flex wow fadeInRight"
-            data-wow-duration="1500ms"
-          >
-            <div className="my-auto">
-              <div className="contact-one__image">
-                <img src={ContactImage} alt="" />
-              </div>
-            </div>
           </div>
         </div>
       </div>

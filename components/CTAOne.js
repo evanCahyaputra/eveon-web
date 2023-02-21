@@ -1,15 +1,10 @@
 import React from "react";
 import BlockTitle from "./BlockTitle";
-
-import CtaShape1 from "../assets/images/shapes/cta-1-shape-1.png";
-import CtaShape2 from "../assets/images/shapes/cta-1-shape-2.png";
 import CtaMoc1 from "../assets/images/headline/eveon-2.png";
 
 const CTAOne = () => {
   return (
     <section className="cta-one">
-      <img src={CtaShape1} className="cta-one__bg-shape-1" alt="" />
-      <img src={CtaShape2} className="cta-one__bg-shape-2" alt="" />
       <div className="container">
         <div className="cta-one__moc wow fadeInLeft" data-wow-duration="1500ms">
           <img src={CtaMoc1} className="cta-one__moc-img" alt="" />

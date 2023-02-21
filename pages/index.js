@@ -9,7 +9,7 @@ import Contact from "../components/Contact";
 import Services from "../components/Services";
 import CTAOne from "../components/CTAOne";
 import CTATwo from "../components/CTATwo";
-import Testimonials from "../components/Testimonials";
+import FunFact from "../components/FunFact";
 import MenuContextProvider from "../context/MenuContext";
 
 const HomePage = () => {
@@ -24,9 +24,9 @@ const HomePage = () => {
         />
         <Banner />
         <Services />
-        <Testimonials />
-        <CTAOne />
+        <FunFact />
         <CTATwo />
+        <CTAOne />
         <Contact />
         <CTAThree />
         <Footer />
