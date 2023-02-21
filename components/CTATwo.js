@@ -3,7 +3,7 @@ import BlockTitle from "./BlockTitle";
 
 const CTATwo = () => {
   return (
-    <section className="cta-two">
+    <section className="cta-two" id="about-us">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

@@ -3,7 +3,7 @@ import BlockTitle from "./BlockTitle";
 
 const Contact = () => {
   return (
-    <section className="contact-one">
+    <section className="contact-one" id="contact-us">
       <div className="container">
         <div className="row">
           <div className="col-lg-7">

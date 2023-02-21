@@ -3,7 +3,7 @@ import BlockTitle from "./BlockTitle";
 
 const FunFact = () => {
   return (
-    <section className="funfact-one">
+    <section className="funfact-one" id="our-value">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

@@ -4,7 +4,7 @@ import BannerBG from "../assets/images/headline/eveon-1.png";
 
 const Banner = () => {
   return (
-    <section className="banner-one" id="home">
+    <section className="banner-one" id="home-page">
       <img src={BannerShape} className="banner-one__bg-shape-1" alt="" />
       <div
         className="banner-one__bg"
