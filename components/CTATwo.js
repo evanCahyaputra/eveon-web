@@ -22,7 +22,7 @@ const CTATwo = () => {
                     Global Expertise bertahun-tahun dalam selama puluhan tahun melakukan pengembangan dan riset dibidang manajemen listrik, mekanik, dan daya, untuk menciptakan teknologi elektrifikasi kendaraan yang inovatif dan berkelanjutan.
                   </p>
                 </div>
-                <div className="col-lg-6 text-center">
+                <div className="col-lg-6 text-center cta-mt-5">
                   <div className="cta-two__icon mb-3">
                     <i className="apton-icon-app-development"></i>
                   </div>

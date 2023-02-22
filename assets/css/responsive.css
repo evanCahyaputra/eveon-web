@@ -314,7 +314,11 @@
   }
 
   .banner-one__bg {
-    display: none;
+    display: block;
+  }
+
+  .site-header-one__logo .side-menu__toggler {
+    color: #fff;
   }
 
   .comment-one__single {
@@ -398,17 +402,49 @@
 }
 
 @media (max-width: 480px) {
-  .banner-one__content br {
-    display: none;
+  .banner-one__content {
+    text-align: center;
   }
 
   .banner-one__content h3 {
-    font-size: 50px;
+    color: white;
+    font-size: 40px;
     line-height: 1.2em;
+  }
+
+  .banner-one__content p {
+    color: white;
+    font-size: 20px;
+  }
+
+  .service-one__single {
+    border-radius: unset;
   }
 
   [class*="banner-one__bg-shape-"] {
     display: none;
+  }
+
+  .service-one {
+    padding-bottom: 0;
+  }
+
+  .funfact-one__single {
+    padding-top: 30px;
+  }
+
+  .cta-two__icon i {
+    margin-right: 0;
+  }
+
+  .cta-mt-5 {
+    margin-top: 2rem;
+  }
+
+  .cta-one__moc {
+    right: 0;
+    top: 0;
+    border-radius: 10px;
   }
 }
 

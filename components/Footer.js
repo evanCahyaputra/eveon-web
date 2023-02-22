@@ -5,26 +5,6 @@ import FooterLogo from "../assets/images/main-logo.png";
 const Footer = () => {
   return (
     <div>
-      <section className="mailchimp-one">
-        <div className="container wow fadeInUp">
-          <div className="inner-container">
-            <div className="mailchimp-one__icon">
-              <i className="apton-icon-mail"></i>
-            </div>
-            <form action="#" className="mailchimp-one__form">
-              <input
-                type="text"
-                placeholder="Enter your email address"
-                name="email"
-              />
-              <button className="thm-btn mailchimp-one__btn" type="submit">
-                <span>Subscribe Now</span>
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
-
       <footer className="site-footer">
         <div className="site-footer__upper">
           <div className="container">
