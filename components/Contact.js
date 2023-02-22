@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from 'react-google-recaptcha';
 import BlockTitle from "./BlockTitle";
@@ -6,9 +6,12 @@ import BlockTitle from "./BlockTitle";
 const Contact = () => {
   const form = useRef();
   const recaptchaRef = React.createRef();
+  const [disabled, setDisabled] = useState(false);
+  const [errorText, setErrorText] = useState('');
 
   const sendEmail = async(e) => {
     e.preventDefault();
+    setDisabled(true);
     const token = await recaptchaRef.current.executeAsync();
     const data = new FormData(e.target);
     
@@ -22,10 +25,12 @@ const Contact = () => {
     };
 
     emailjs.send('service_pb24s37', 'template_24v9y8k', templateParams, 'V90LtnkKv4QUNRRz1')
-      .then((result) => {
-          console.log(result.text);
+      .then(() => {
+        setDisabled(false);
+        setErrorText('Success');
       }, (error) => {
-          console.log(error.text);
+        setDisabled(false);
+        setErrorText(error.text);
       });
   };
 
@@ -66,7 +71,8 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 <div className="col-lg-12 text-left">
-                  <button type="submit" className="thm-btn contact-one__btn">
+                  {errorText && (<div className="alert alert-info">Success</div>)}
+                  <button type="submit" className="thm-btn contact-one__btn" disabled={disabled}>
                     <span>Send Message</span>
                   </button>
                 </div>
