@@ -16,7 +16,7 @@ const FunFact = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-4">
             <div className="funfact-one__single">
               <h3 className="counter">
                 People
@@ -24,7 +24,7 @@ const FunFact = () => {
               <p>Memberikan kepraktisan dan efisiensi untuk meningkatkan kualitas hidup manusia.</p>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-4">
             <div className="funfact-one__single">
               <h3 className="counter">
                 Experience
@@ -32,7 +32,7 @@ const FunFact = () => {
               <p>Menghadirkan teknologi power management terbaik yang tentunya aman dan andal.</p>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-4">
             <div className="funfact-one__single">
               <h3 className="counter">
                 Generation
