@@ -1,5 +1,11 @@
 import React from "react";
 import BlockTitle from "./BlockTitle";
+import Image from 'next/image';
+import evChargingIcon from "../assets/images/icon/ev_charging_station.svg";
+import apartmentIcon from "../assets/images/icon/hotel.svg";
+import publicSpaceIcon from "../assets/images/icon/public_space.svg";
+import businessIcon from "../assets/images/icon/business.svg";
+import parkingIcon from "../assets/images/icon/parking.svg";
 
 const Services = () => {
   return (
@@ -16,7 +22,13 @@ const Services = () => {
               <div className="service-one__inner">
                 <div className="service-one__circle"></div>
                 <div className="service-one__icon">
-                  <i className="apton-icon-computer-graphic"></i>
+                  <Image
+                    priority
+                    src={evChargingIcon}
+                    height={100}
+                    width={100}
+                    alt="EV Charging Station"
+                  />
                 </div>
                 <h3>EV Charging Station (SPKLU)</h3>
               </div>
@@ -27,7 +39,13 @@ const Services = () => {
               <div className="service-one__inner">
                 <div className="service-one__circle"></div>
                 <div className="service-one__icon">
-                  <i className="apton-icon-development"></i>
+                  <Image
+                    priority
+                    src={publicSpaceIcon}
+                    height={80}
+                    width={80}
+                    alt="Shopping Malls & Public Space"
+                  />
                 </div>
                 <h3>Shopping Malls & Public Space</h3>
               </div>
@@ -38,7 +56,13 @@ const Services = () => {
               <div className="service-one__inner">
                 <div className="service-one__circle"></div>
                 <div className="service-one__icon">
-                  <i className="apton-icon-development1"></i>
+                  <Image
+                    priority
+                    src={apartmentIcon}
+                    height={90}
+                    width={90}
+                    alt="Residence, Hotel, and Apartment"
+                  />
                 </div>
                 <h3>Residence, Hotel, and Apartment</h3>
               </div>
@@ -49,7 +73,13 @@ const Services = () => {
               <div className="service-one__inner">
                 <div className="service-one__circle"></div>
                 <div className="service-one__icon">
-                  <i className="apton-icon-responsive"></i>
+                  <Image
+                    priority
+                    src={businessIcon}
+                    height={90}
+                    width={90}
+                    alt="Business District & Office Tower"
+                  />
                 </div>
                 <h3>Business District & Office Tower</h3>
               </div>
@@ -60,7 +90,13 @@ const Services = () => {
               <div className="service-one__inner">
                 <div className="service-one__circle"></div>
                 <div className="service-one__icon">
-                  <i className="apton-icon-responsive"></i>
+                  <Image
+                    priority
+                    src={parkingIcon}
+                    height={70}
+                    width={70}
+                    alt="Public Parking & Facility"
+                  />
                 </div>
                 <h3>Public Parking & Facility</h3>
               </div>

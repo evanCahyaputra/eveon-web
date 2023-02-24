@@ -37,7 +37,8 @@ font-family: 'Quicksand', sans-serif;
 */
 
 :root {
-  --thm-font: "Quicksand", sans-serif;
+  --thm-font: "Exo", sans-serif;
+  --thm-font-sub: "Barlow", sans-serif;
   --thm-base: #00FA64;
   --thm-base-rgb: 253, 99, 47;
   --thm-primary: #00DCFA;
@@ -316,54 +317,6 @@ a:visited {
   animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-}
-
-.scroll-to-top {
-  width: 45px;
-  height: 45px;
-  cursor: pointer;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(var(--thm-base)),
-    color-stop(51%, var(--thm-primary)),
-    to(var(--thm-base))
-  );
-  background-image: linear-gradient(
-    180deg,
-    var(--thm-base) 0%,
-    var(--thm-primary) 51%,
-    var(--thm-base) 100%
-  );
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  z-index: 99;
-  text-align: center;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  outline: none;
-  background-size: auto 200%;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s ease;
-}
-
-.scroll-to-top i {
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 45px;
-}
-
-.scroll-to-top:hover {
-  background-position: bottom;
-}
-
-.scroll-to-top:hover i {
-  color: #fff;
 }
 
 .thm-base-bg {
@@ -1083,6 +1036,7 @@ a:visited {
 .banner-one__content p {
   margin: 0;
   margin-bottom: 53px;
+  font-family: var(--thm-font-sub);
 }
 
 .banner-one__video {
@@ -2704,6 +2658,7 @@ a:visited {
   color: var(--thm-black);
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
+  font-family: var(--thm-font-sub);
 }
 
 .service-one__single h3 a {
@@ -2917,7 +2872,7 @@ a:visited {
   font-size: 24px;
   line-height: 40px;
   font-weight: 500;
-  /* text-shadow: 0 1px 3px var(--thm-black); */
+  font-family: var(--thm-font-sub);
 }
 
 .cta-one__list {
@@ -2981,6 +2936,11 @@ a:visited {
 .cta-two__content .block-title {
   padding-bottom: 40px;
 }
+
+.cta-two__content p {
+  font-family: var(--thm-font-sub);
+}
+
 .cta-two__icon {
   align-items: center;
   display: flex;
@@ -3305,6 +3265,7 @@ a:visited {
   font-size: 18px;
   font-weight: 500;
   line-height: 1em;
+  font-family: var(--thm-font-sub);
 }
 
 /*--------------------------------------------------------------
@@ -4619,4 +4580,99 @@ a:visited {
   font-size: 18px;
   line-height: 36px;
   font-weight: 500;
+}
+
+.grecaptcha-badge { 
+  visibility: hidden;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:20px;
+	right:20px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(var(--thm-base)),
+    color-stop(51%, var(--thm-primary)),
+    to(var(--thm-base))
+  );
+  background-image: linear-gradient(
+    180deg,
+    var(--thm-base) 0%,
+    var(--thm-primary) 0%,
+    var(--thm-base) 100%
+  );
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px var(--thm-black);
+  z-index:100;
+}
+
+a.float:hover {
+  color: white;
+}
+
+.scroll-to-top {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(var(--thm-base)),
+    color-stop(51%, var(--thm-primary)),
+    to(var(--thm-base))
+  );
+  background-image: linear-gradient(
+    180deg,
+    var(--thm-base) 0%,
+    var(--thm-primary) 51%,
+    var(--thm-base) 100%
+  );
+  position: fixed;
+  bottom: 70px;
+  right: 70px;
+  z-index: 99;
+  text-align: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  outline: none;
+  background-size: auto 200%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.scroll-to-top i {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 45px;
+}
+
+.scroll-to-top:hover {
+  background-position: bottom;
+}
+
+.scroll-to-top:hover i {
+  color: #fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.text-gradient {
+	text-transform: uppercase;
+	background: linear-gradient(to right, var(--thm-primary) 8%, var(--thm-base) 0%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
