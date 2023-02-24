@@ -1,6 +1,5 @@
 import React from "react";
 import BlockTitle from "./BlockTitle";
-import Image from 'next/image';
 import evChargingIcon from "../assets/images/icon/ev_charging_station.svg";
 import apartmentIcon from "../assets/images/icon/hotel.svg";
 import publicSpaceIcon from "../assets/images/icon/public_space.svg";
@@ -22,8 +21,7 @@ const Services = () => {
               <div className="service-one__inner">
                 <div className="service-one__circle"></div>
                 <div className="service-one__icon">
-                  <Image
-                    priority
+                  <img
                     src={evChargingIcon}
                     height={100}
                     width={100}
@@ -39,8 +37,7 @@ const Services = () => {
               <div className="service-one__inner">
                 <div className="service-one__circle"></div>
                 <div className="service-one__icon">
-                  <Image
-                    priority
+                  <img
                     src={publicSpaceIcon}
                     height={80}
                     width={80}
@@ -56,8 +53,7 @@ const Services = () => {
               <div className="service-one__inner">
                 <div className="service-one__circle"></div>
                 <div className="service-one__icon">
-                  <Image
-                    priority
+                  <img
                     src={apartmentIcon}
                     height={90}
                     width={90}
@@ -73,8 +69,7 @@ const Services = () => {
               <div className="service-one__inner">
                 <div className="service-one__circle"></div>
                 <div className="service-one__icon">
-                  <Image
-                    priority
+                  <img
                     src={businessIcon}
                     height={90}
                     width={90}
@@ -90,8 +85,7 @@ const Services = () => {
               <div className="service-one__inner">
                 <div className="service-one__circle"></div>
                 <div className="service-one__icon">
-                  <Image
-                    priority
+                  <img
                     src={parkingIcon}
                     height={70}
                     width={70}

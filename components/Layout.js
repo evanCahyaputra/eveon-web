@@ -57,8 +57,8 @@ const Layout = (props) => {
         </ScrollLink>
       ) : null}
 
-      <a href="https://api.whatsapp.com/send?phone=+6281294977707&text=Hallo%21%20Eveon." class="float" target="_blank">
-        <i class="fa fa-whatsapp my-float"></i>
+      <a href="https://api.whatsapp.com/send?phone=+6281294977707&text=Hallo%21%20Eveon." className="float" target="_blank">
+        <i className="fa fa-whatsapp my-float"></i>
       </a>
     </div>
   );
