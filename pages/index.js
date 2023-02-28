@@ -10,6 +10,7 @@ import Services from "../components/Services";
 import CTAOne from "../components/CTAOne";
 import CTATwo from "../components/CTATwo";
 import FunFact from "../components/FunFact";
+import BlogHome from "../components/BlogHome";
 import MenuContextProvider from "../context/MenuContext";
 
 const HomePage = () => {
@@ -24,7 +25,7 @@ const HomePage = () => {
         />
         <Banner />
         <Services />
-        <FunFact />
+        <BlogHome />
         <CTATwo />
         <CTAOne />
         <Contact />

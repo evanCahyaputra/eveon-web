@@ -1,4 +1,16 @@
 @media (max-width: 1199px) {
+  .blog-one {
+    padding-top: 10px;
+  }
+
+  .blog-one__image > img {
+    max-height: 193px;
+  }
+
+  .blog-one__content {
+    min-height: 290px;
+  }
+
   .site-header-one .container-fluid {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -435,6 +447,10 @@
     right: auto;
     margin-top: 30px;
   }
+
+  .blog-one__image > img {
+    max-height: unset;
+  }
 }
 
 @media (max-width: 490px) {
@@ -538,6 +554,10 @@
     right: 0;
     top: 0;
     border-radius: 10px;
+  }
+
+  .cta-one__content {
+    margin-top: 0;
   }
 
   .cta-one__content, .cta-one__content h3 {

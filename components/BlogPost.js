@@ -13,17 +13,10 @@ const BlogPost = (props) => {
           <div className="blog-one__circle"></div>
           <div className="blog-one__content-inner">
             <div className="blog-one__meta">
-              <a href="#">
-                <i className="far fa-clock"></i> {props.postDate}
-              </a>
-              <a href="#">
-                <i className="far fa-comments"></i> {props.postCommentCount}
-              </a>
+              {props.postDate}
             </div>
             <h3>
-              <Link href={props.postLink}>
-                <a>{props.postTitle}</a>
-              </Link>
+              {props.postTitle}
             </h3>
           </div>
         </div>
