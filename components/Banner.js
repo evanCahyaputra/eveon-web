@@ -1,6 +1,6 @@
 import React from "react";
 import BannerShape from "../assets/images/shapes/banner-shape-1-1.png";
-import BannerBG from "../assets/images/headline/eveon-1.png";
+import BannerBG from "../assets/images/headline/eveon-5.jpg";
 
 const Banner = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import BlockTitle from "./BlockTitle";
-import CtaMoc1 from "../assets/images/headline/eveon-2.png";
+import CtaMoc1 from "../assets/images/headline/eveon-6.jpg";
 
 const CTAOne = () => {
   return (
